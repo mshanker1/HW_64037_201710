@@ -3,13 +3,14 @@ title: "Assignment 1"
 output: html_notebook
 ---
 This is the solution to Assignment 1 - Spring 2017
-Create a new repository called Assignment 1 on GitHub. 
-Import the following data into R. 
+
+1. Create a new repository called Assignment 1 on GitHub. 
+2. Import the following data into R. 
 https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD&bom=true
-Generate a summary (mean, and standard deviation) of all numerical columns.
-Do the same as above, but now grouped by crime code.
-Count the number of incidents by crime code and District
-Create a cross-table of crime code and weapons used.
+3. Generate a summary (mean, and standard deviation) of all numerical columns.
+4. Do the same as above, but now grouped by crime code.
+5. Count the number of incidents by crime code and District
+6. Create a cross-table of crime code and weapons used.
 
 -----
 
