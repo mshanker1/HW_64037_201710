@@ -27,8 +27,8 @@ download.file(fileref,destfile = "bpd.csv",method = "curl")
 Now import the file
 ```{r}
 Bpd <- read.csv("bpd.csv")
-summary(Bpd)
 Bpd <- mutate_at(Bpd,vars(District),funs(toupper)) # converting all lowercase to uppercase
+summary(Bpd)
 ```
 
 # Note that numeric columns may contain NAs, as such remember to set
