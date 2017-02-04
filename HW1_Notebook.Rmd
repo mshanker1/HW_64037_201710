@@ -45,8 +45,7 @@ sapply(Bpd[sapply(Bpd,is.numeric)],sd,na.rm=T)
 Summarize by Crime Code
 ```{r}
 library("dplyr")
-by_c <- group_by(Bpd,CrimeCode) # group by Code
-summarize(by_c, mpost = mean(Post,na.rm=T), spost = sd(Post,na.rm=T))
+Bpd %>% group_by(CrimeCode) %>% summarise_if(is.numeric,mean,na.rm=T) # by Crime code for all numeric columms
 ```
 
 Cross tabs for number of incidents by Crime code and District
